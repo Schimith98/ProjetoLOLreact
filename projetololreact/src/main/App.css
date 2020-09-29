@@ -1,0 +1,29 @@
+
+.header {
+    grid-area: header;
+}
+.nav {
+    grid-area: nav;
+}
+.home{
+    grid-area: home;
+}
+.footer{
+    grid-area: footer;
+}
+.app{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 70px 40px 1fr 40px;
+    grid-template-areas: 
+        'header header header header header header'
+        'nav nav nav nav nav nav'
+        'home home home home home home'
+        'footer footer footer footer footer footer';
+    grid-gap: 5px;
+    padding: 5px;
+    height: 100%;
+    background-color: rgb(4, 0, 253);
+}
+

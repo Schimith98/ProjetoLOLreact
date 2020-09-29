@@ -1,11 +1,11 @@
 import React from 'react'
-
+import './nav.css'
 import { Link } from 'react-router-dom'
 
 export default props =>
-    <aside className="nav">
+    <nav className="nav">
         <ul>
-            <Link to= "/">Todos os campeoes</Link>
-            <Link to="/freeweek">Free Week</Link>
+            <li><Link to= "/">Todos os campeoes</Link></li>
+            <li><Link to="/freeweek">Free Week</Link></li>
         </ul>
-    </aside>
+    </nav>

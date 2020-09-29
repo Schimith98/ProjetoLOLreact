@@ -1,9 +1,10 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom'
+import './App.css'
 
 import Header from '../components/header'
 import Nav from '../components/nav'
-import Routes from './Routes'
+import Home from '../components/home'
 import Footer from '../components/footer'
 
 export default props =>
@@ -11,7 +12,7 @@ export default props =>
     <div className="app">
         <Header />
         <Nav />
-        <Routes />
+        <Home />
         <Footer />
     </div>
 </BrowserRouter>

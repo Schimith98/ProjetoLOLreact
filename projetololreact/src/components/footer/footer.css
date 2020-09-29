@@ -1,0 +1,7 @@
+footer.footer {
+    background-color: rgb(14, 14, 14);
+    color: white;
+    padding: 1%;
+    text-align: end;
+    border-radius: 5px;
+}
