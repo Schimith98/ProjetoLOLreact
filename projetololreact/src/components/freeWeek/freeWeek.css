@@ -1,0 +1,35 @@
+div.freeWeek {
+    background-color: rgb(100, 100, 100);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+div.freeWeek ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+}
+
+div.freeWeek ul li{
+    text-decoration: none;
+    font-size: 10px;
+    word-wrap: break-word;
+    color: white;
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 65px;
+    margin: 0.5%
+}
+
+div.freeWeek ul li img{
+    width: 50px;
+    height: 50px;
+}

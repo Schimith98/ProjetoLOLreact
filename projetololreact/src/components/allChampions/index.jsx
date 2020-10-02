@@ -37,21 +37,29 @@ export default class AllChampions extends Component {
     componentDidMount() {
         this.loadChampions()
     }
-    
+
     render() {
         return (
             <div className="allChampions">
-                <div className="championInfo">
-                    <div>
-                        {this.state.selectedChampion.name} {this.state.selectedChampion.title}.
+                {this.state.selectedChampion.stats !== undefined &&
+                    <div className="championInfo">
+                        <div>
+                            {this.state.selectedChampion.name} {this.state.selectedChampion.title}.
                         <p>{this.state.selectedChampion.blurb}</p>
+                        </div>
+                        <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${this.state.selectedChampion.id}_0.jpg`}
+                            alt={this.state.selectedChampion.name} />
+                        <div>
+                            {Object.entries(this.state.selectedChampion.stats).forEach(([chave, valor]) => {
+                                return (
+                                    <p>
+                                        {`${chave} : ${valor}`}
+                                    </p>
+                                )
+                            })}
+                        </div>
                     </div>
-                    <img src={`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${this.state.selectedChampion.id}_0.jpg`}
-                        alt={this.state.selectedChampion.name} />
-                    <div>
-        <p>{}</p>
-                    </div>
-                </div>
+                }
                 <ul>
                     {this.state.champions.map((champ) => {
                         return (
